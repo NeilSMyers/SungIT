@@ -9,3 +9,5 @@ npm-debug.*
 *.orig.*
 web-build/
 web-report/
+*.mp3
+mockData.js
