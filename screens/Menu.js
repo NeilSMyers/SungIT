@@ -1,9 +1,10 @@
 import React from "react"
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native"
+import { SafeAreaView } from "react-navigation"
 
-const Play = props => {
+const Menu = props => {
   return (
-    <View style={styles.wrapper}>
+    <SafeAreaView style={styles.wrapper}>
       <View style={styles.intro}>
         <Text style={styles.title}>SungIT</Text>
         <Text style={styles.text}>Hear it, Guess it, Go again</Text>
@@ -13,9 +14,9 @@ const Play = props => {
         onPress={() => props.navigation.navigate("Game")}
         style={styles.button}
       >
-        <Text style={styles.buttonText}>PLAY</Text>
+        <Text style={styles.buttonText}>Menu</Text>
       </TouchableOpacity>
-    </View>
+    </SafeAreaView>
   )
 }
 
@@ -51,4 +52,4 @@ const styles = StyleSheet.create({
   }
 })
 
-export default Play
+export default Menu

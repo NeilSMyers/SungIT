@@ -1,13 +1,12 @@
-import { createAppContainer } from "react-navigation"
-import { createStackNavigator } from "react-navigation-stack"
+import { createAppContainer, createSwitchNavigator } from "react-navigation"
 
-import Play from "./screens/Play"
+import Menu from "./screens/Menu"
 import Game from "./screens/Game"
 import Correct from "./screens/Correct"
 import Wrong from "./screens/Wrong"
 
-const Navigator = createStackNavigator({
-  Play,
+const Navigator = createSwitchNavigator({
+  Menu,
   Game,
   Correct,
   Wrong
